@@ -299,66 +299,52 @@ eventbrite: 53812597929          # optional: alphanumeric key for Eventbrite reg
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
-
-<div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
-  <h3>Text Editor</h3>
-
+<div id="openrefine"> {% comment %} Start of 'OpenRefine' section. {% endcomment %}
+  <h3>OpenRefine</h3>
   <p>
-    When you're writing code, it's nice to have a text editor that is
-    optimized for writing code, with features like automatic
-    color-coding of key words. The default text editor on macOS and
-    Linux is usually set to Vim, which is not famous for being
-    intuitive. If you accidentally find yourself stuck in it, hit
-    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd> 
-    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to 
-    return to the shell.
+    For this lesson you will need <em>OpenRefine</em> and a
+    web browser. <em>Note:</em> this is a Java program that runs on your machine (not in the cloud).
+    It runs inside a web browser, but no web connection is needed.
   </p>
 
   <div class="row">
     <div class="col-md-4">
-      <h4 id="editor-windows">Windows</h4>
+      <h4 id="openrefine-windows">Windows</h4>
       <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        It is installed along with Git.
+        Check that you have either the Firefox or the Chrome browser installed and set as your default browser.
+        <strong>OpenRefine runs in your default browser.</strong>
+        It will not run correctly in Internet Explorer.
       </p>
-      <p>
-        Others editors that you can use are
-        <a href="https://notepad-plus-plus.org/">Notepad++</a> or
-        <a href="https://www.sublimetext.com/">Sublime Text</a>.
-        <strong>Be aware that you must
-          add its installation directory to your system path.</strong>
-        Please ask your instructor to help you do this.
-      </p>
+      <p>Download software from <a href="http://openrefine.org/">http://openrefine.org/</a></p>
+      <p>Create a new directory called OpenRefine.</p>
+      <p>Unzip the downloaded file into the OpenRefine directory by right-clicking and selecting "Extract ...". </p>
+      <p>Go to your newly created OpenRefine directory.</p>
+      <p>Launch OpenRefine by clicking <code>openrefine.exe</code> (this will launch a command prompt window, but you can ignore that - just wait for OpenRefine to open in the browser).</p>
+      <p>If you are using a different browser, or if OpenRefine does not automatically open for you, point your browser at <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> or <a href="http://localhost:3333">http://localhost:3333</a> to use the program.</p>
     </div>
     <div class="col-md-4">
-      <h4 id="editor-macosx">macOS</h4>
-      <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
-        for an example on how to open nano.
-        It should be pre-installed.
-      </p>
-      <p>
-        Others editors that you can use are
-        <a href="https://www.barebones.com/products/bbedit/">BBEdit</a> or
-        <a href="https://www.sublimetext.com/">Sublime Text</a>.
-      </p>
+      <h4 id="openrefine-mac">Mac</h4>
+      <p>Check that you have either the Firefox or the Chrome browser installed and set as your default browser. <strong>OpenRefine runs in your default browser.</strong> It may not run correctly in Safari.</p>
+      <p>Download software from <a href="http://openrefine.org/">http://openrefine.org/</a>.</p>
+      <p>Create a new directory called OpenRefine.</p>
+      <p>Unzip the downloaded file into the OpenRefine directory by double-clicking it.</p>
+      <p>Go to your newly created OpenRefine directory.</p>
+      <p>Launch OpenRefine by dragging the icon into the Applications folder.</p>
+      <p>Use <code>Ctrl-click/Open ... </code> to launch it.</p>
+      <p>If you are using a different browser, or if OpenRefine does not automatically open for you, point your browser at <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> or <a href="http://localhost:3333">http://localhost:3333</a> to use the program.</p>
     </div>
     <div class="col-md-4">
-      <h4 id="editor-linux">Linux</h4>
-      <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        It should be pre-installed.
-      </p>
-      <p>
-        Others editors that you can use are
-        <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
-        <a href="https://kate-editor.org/">Kate</a> or
-        <a href="https://www.sublimetext.com/">Sublime Text</a>.
-      </p>
+      <h4 id="openrefine-linux">Linux</h4>
+      <p>Check that you have either the Firefox or the Chrome browser installed and set as your default browser. <strong>OpenRefine runs in your default browser.</strong></p>
+      <p>Download software from <a href="http://openrefine.org/">http://openrefine.org/</a>.</p>
+      <p>Make a directory called OpenRefine.</p>
+      <p>Unzip the downloaded file into the OpenRefine directory.</p>
+      <p>Go to your newly created OpenRefine directory.</p>
+      <p>Launch OpenRefine by entering <code>./refine</code> into the terminal within the OpenRefine directory.</p>
+      <p>If you are using a different browser, or if OpenRefine does not automatically open for you, point your browser at <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> or <a href="http://localhost:3333">http://localhost:3333</a> to use the program.</p>
     </div>
   </div>
-</div> {% comment %} End of 'editor' section. {% endcomment %}
+</div> {% comment %} End of 'OpenRefine' section. {% endcomment %}
 
 <div id="python"> {% comment %} Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
@@ -501,52 +487,7 @@ eventbrite: 53812597929          # optional: alphanumeric key for Eventbrite reg
     Instructors will provide a workaround for it if needed.</strong></p>
 </div> {% comment %} End of 'SQLite' section. {% endcomment %}
 
-<div id="openrefine"> {% comment %} Start of 'OpenRefine' section. {% endcomment %}
-  <h3>OpenRefine</h3>
-  <p>
-    For this lesson you will need <em>OpenRefine</em> and a
-    web browser. <em>Note:</em> this is a Java program that runs on your machine (not in the cloud).
-    It runs inside a web browser, but no web connection is needed.
-  </p>
 
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="openrefine-windows">Windows</h4>
-      <p>
-        Check that you have either the Firefox or the Chrome browser installed and set as your default browser.
-        <strong>OpenRefine runs in your default browser.</strong>
-        It will not run correctly in Internet Explorer.
-      </p>
-      <p>Download software from <a href="http://openrefine.org/">http://openrefine.org/</a></p>
-      <p>Create a new directory called OpenRefine.</p>
-      <p>Unzip the downloaded file into the OpenRefine directory by right-clicking and selecting "Extract ...". </p>
-      <p>Go to your newly created OpenRefine directory.</p>
-      <p>Launch OpenRefine by clicking <code>openrefine.exe</code> (this will launch a command prompt window, but you can ignore that - just wait for OpenRefine to open in the browser).</p>
-      <p>If you are using a different browser, or if OpenRefine does not automatically open for you, point your browser at <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> or <a href="http://localhost:3333">http://localhost:3333</a> to use the program.</p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="openrefine-mac">Mac</h4>
-      <p>Check that you have either the Firefox or the Chrome browser installed and set as your default browser. <strong>OpenRefine runs in your default browser.</strong> It may not run correctly in Safari.</p>
-      <p>Download software from <a href="http://openrefine.org/">http://openrefine.org/</a>.</p>
-      <p>Create a new directory called OpenRefine.</p>
-      <p>Unzip the downloaded file into the OpenRefine directory by double-clicking it.</p>
-      <p>Go to your newly created OpenRefine directory.</p>
-      <p>Launch OpenRefine by dragging the icon into the Applications folder.</p>
-      <p>Use <code>Ctrl-click/Open ... </code> to launch it.</p>
-      <p>If you are using a different browser, or if OpenRefine does not automatically open for you, point your browser at <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> or <a href="http://localhost:3333">http://localhost:3333</a> to use the program.</p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="openrefine-linux">Linux</h4>
-      <p>Check that you have either the Firefox or the Chrome browser installed and set as your default browser. <strong>OpenRefine runs in your default browser.</strong></p>
-      <p>Download software from <a href="http://openrefine.org/">http://openrefine.org/</a>.</p>
-      <p>Make a directory called OpenRefine.</p>
-      <p>Unzip the downloaded file into the OpenRefine directory.</p>
-      <p>Go to your newly created OpenRefine directory.</p>
-      <p>Launch OpenRefine by entering <code>./refine</code> into the terminal within the OpenRefine directory.</p>
-      <p>If you are using a different browser, or if OpenRefine does not automatically open for you, point your browser at <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> or <a href="http://localhost:3333">http://localhost:3333</a> to use the program.</p>
-    </div>
-  </div>
-</div> {% comment %} End of 'OpenRefine' section. {% endcomment %}
 
 {% comment %}
 <div id="vm">
