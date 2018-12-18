@@ -2,7 +2,7 @@
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: "dc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
                       # Be sure to update the Carpentry type in _config.yml as well.  
-venue: "Smithsonian Castle Library"        # brief name of host site without address (e.g., "Euphoric State University")
+venue: "Data Carpentry Workshop at Smithsonian Castle Library"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "1000 Jefferson Dr SW, Washington, DC 20560"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
@@ -28,26 +28,6 @@ eventbrite: 53812597929          # optional: alphanumeric key for Eventbrite reg
   double quotation marks around the value, unless specified otherwise.
   And run 'make workshop-check' *before* committing to make sure that changes are good.
 {% endcomment %}
-
-<h4>Data Carpentry Workshop</h4>
-
-{% comment %}
-  EVENTBRITE
-
-  This block includes the Eventbrite registration widget if
-  'eventbrite' has been set in the header.  You can delete it if you
-  are not using Eventbrite, or leave it in, since it will not be
-  displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-{% if page.eventbrite %}
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="280px"
-  scrolling="auto">
-</iframe>
-{% endif %}
 
 
 <h2 id="general">General Information</h2>
@@ -182,6 +162,25 @@ eventbrite: 53812597929          # optional: alphanumeric key for Eventbrite reg
 </p>
 
 <hr/>
+<h2 id="registration">Registration</h2>
+{% comment %}
+  EVENTBRITE
+
+  This block includes the Eventbrite registration widget if
+  'eventbrite' has been set in the header.  You can delete it if you
+  are not using Eventbrite, or leave it in, since it will not be
+  displayed if the 'eventbrite' field in the header is not set.
+{% endcomment %}
+{% if page.eventbrite %}
+<iframe
+  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+  frameborder="0"
+  width="100%"
+  height="280px"
+  scrolling="auto">
+</iframe>
+{% endif %}
+<hr/>
 
 {% comment %} 
  SURVEYS - DO NOT EDIT SURVEY LINKS 
@@ -253,7 +252,7 @@ eventbrite: 53812597929          # optional: alphanumeric key for Eventbrite reg
   This is one of the places where people frequently make mistakes, so
   please preview your site before committing, and make sure to run
   'tools/check' as well.
-{% endcomment %}
+
 <h2 id="syllabus">Syllabus</h2>
 
 {% if page.carpentry == "swc" %}
@@ -263,8 +262,10 @@ eventbrite: 53812597929          # optional: alphanumeric key for Eventbrite reg
 {% elsif page.carpentry == "lc" %}
   {% include lc/syllabus.html %}
 {% endif %}
-
 <hr/>
+{% endcomment %}
+
+
 
 {% comment %}
   SETUP
