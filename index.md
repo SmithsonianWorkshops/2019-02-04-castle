@@ -446,45 +446,35 @@ eventbrite: 53812597929          # optional: alphanumeric key for Eventbrite reg
 
   <p>
     SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="https://www.sqlite.org/">SQLite</a> in our lessons.
+    will be using <a href="https://www.sqlite.org/">SQLite</a> via the 
+    program <a href="https://sqlitebrowser.org/">DB Browser for SQLite</a>
+  in our lessons. Note: we will be using the latest <a href="https://github.com/sqlitebrowser/sqlitebrowser/releases/tag/v3.11.0-beta3">beta release</a> of this
+    software because of several new features and bug fixes.
+  
   </p>
 
   <div class="row">
     <div class="col-md-4">
       <h4 id="sql-windows">Windows</h4>
       <p>
-        The <a href="https://www.sqlite.org/download.html">
-          {% if page.carpentry == "swc" %}
-          Software Carpentry
-          {% elsif page.carpentry == "dc" %}
-          Data Carpentry
-          {% elsif page.carpentry == "lc" %}
-          Library Carpentry
-          {% endif %}
-          Windows Installer
-	</a>
-        installs SQLite for Windows.
-        If you used the installer to configure nano, you don't need to run it again.
+        Download the <a href="https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.11.0-beta3/DB.Browser.for.SQLite-3.11.0-beta3-win64.msi">Windows installer</a>
+        or if you don't have admin rights to your computer, you can use
+        this <a href="https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.11.0-beta3/DB.Browser.for.SQLite-3.11.0-beta3-win64.zip">standalone version</a>
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="sql-macosx">macOS</h4>
       <p>
-        SQLite comes pre-installed on macOS.
+        Download this <a href="https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.11.0-beta3/DB.Browser.for.SQLite-3.11.0-beta3.dmg">disk image</a> and copy the application to your computer.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="sql-linux">Linux</h4>
       <p>
-        SQLite comes pre-installed on Linux.
+        Download and install fro the the <a href="https://github.com/sqlitebrowser/sqlitebrowser/archive/v3.11.0-beta3.tar.gz">source code</a> or use the SQLite command line that comes pre-installed on Linux.
       </p>
     </div>
   </div>
-
-  <p><strong>If you installed Anaconda, it also has a copy of SQLite
-    <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
-    Instructors will provide a workaround for it if needed.</strong></p>
 </div> {% comment %} End of 'SQLite' section. {% endcomment %}
 
 
