@@ -30,7 +30,7 @@ eventbrite: 55534598479          # optional: alphanumeric key for Eventbrite reg
 {% endcomment %}
 
 
-<h2 id="general">General Information</h2>
+<h2 id="general"><a name='general'>General Information</a></h2>
 
 {% comment %}
   INTRODUCTION
@@ -162,7 +162,7 @@ eventbrite: 55534598479          # optional: alphanumeric key for Eventbrite reg
 </p>
 
 <hr/>
-<h2 id="registration">Registration</h2>
+<h2 id="registration"><a name='registration'>Registration</a></h2>
 {% comment %}
   EVENTBRITE
 
@@ -185,7 +185,7 @@ eventbrite: 55534598479          # optional: alphanumeric key for Eventbrite reg
 {% comment %} 
  SURVEYS - DO NOT EDIT SURVEY LINKS 
 {% endcomment %}
-<h2 id="surveys">Surveys</h2>
+<h2 id="surveys"><a name='surveys'>Surveys</a></h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 {% if site.carpentry == "swc" %} 
 <p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
@@ -208,7 +208,7 @@ eventbrite: 55534598479          # optional: alphanumeric key for Eventbrite reg
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
 {% endcomment %}
-<h2 id="schedule">Schedule</h2>
+<h2 id="schedule"><a name='schedule'>Schedule</a></h2>
 
 {% if page.carpentry == "swc" %}
   {% include sc/schedule.html %}
@@ -253,7 +253,7 @@ eventbrite: 55534598479          # optional: alphanumeric key for Eventbrite reg
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 
-<h2 id="syllabus">Syllabus</h2>
+<h2 id="syllabus"><a name='syllabus'>Syllabus</a></h2>
 
 {% if page.carpentry == "swc" %}
   {% include sc/syllabus.html %}
@@ -279,7 +279,7 @@ eventbrite: 55534598479          # optional: alphanumeric key for Eventbrite reg
   'tools/check' as well.
 {% endcomment %}
 
-<h2 id="setup">Setup</h2>
+<h2 id="setup"><a name="setup">Setup</a></h2>
 
 <p>
   To participate in a
@@ -300,7 +300,7 @@ eventbrite: 55534598479          # optional: alphanumeric key for Eventbrite reg
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 <div id="openrefine"> {% comment %} Start of 'OpenRefine' section. {% endcomment %}
-  <h3>OpenRefine</h3>
+  <h3><a name='openrefine'>OpenRefine</a></h3>
   <p>
     For this lesson you will need <em>OpenRefine</em> and a
     web browser. <em>Note:</em> this is a Java program that runs on your machine (not in the cloud).
@@ -350,7 +350,7 @@ eventbrite: 55534598479          # optional: alphanumeric key for Eventbrite reg
            the workshop will teach Python using something other than
            the Jupyter notebook.
            Details at https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility {% endcomment %}
-  <h3>Python</h3>
+  <h3><a name='python'>Python</a></h3>
 
   <p>
     <a href="https://python.org">Python</a> is a popular language for
@@ -442,7 +442,7 @@ eventbrite: 55534598479          # optional: alphanumeric key for Eventbrite reg
 
 
 <div id="sql"> {% comment %} Start of 'SQLite' section. {% endcomment %}
-  <h3>SQLite</h3>
+  <h3><a name='sqlite'>SQLite</a></h3>
 
   <p>
     SQL is a specialized programming language used with databases.  We
